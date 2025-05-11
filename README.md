@@ -9,6 +9,8 @@
 - **Smooth Animations:** Enhanced user experience with animations powered by Framer Motion and AOS.
 - **Interactive Components:** Engaging UI components using Tailwind CSS and Lucide-React icons.
 - **Clear CTA Buttons:** Prominent call-to-action buttons that encourage users to take the next step.
+**Live Chat:** Integrated **Tawk.to** live chat to help users get in touch with the support team instantly.
+
 
 ## Tech Stack
 
@@ -39,6 +41,11 @@
 
 ### 6. Dark Mode Toggle
    - Allows users to switch between dark and light modes for better visibility based on their preferences.
+
+  ### 7. Live Chat Integration
+   - **Tawk.to** chat widget integrated for direct communication with customer support.
+   - The chat widget automatically loads and allows users to interact with support agents instantly.
+ 
 
 ## Dark Mode
 
