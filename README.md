@@ -61,3 +61,8 @@ SoftSell is a full-stack MERN (MongoDB, Express, React, Node.js) application tha
 
 📝 Feedback Form: Coming soon
 
+---
+
+## 📄 License
+This project is licensed under the MIT License.
+
