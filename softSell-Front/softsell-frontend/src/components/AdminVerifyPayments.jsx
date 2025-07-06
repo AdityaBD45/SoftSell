@@ -17,7 +17,7 @@ const AdminVerifyPayments = () => {
 
     const fetchProofs = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/purchase/proofs', {
+        const { data } = await axios.get('https://softsell-api.onrender.com/api/purchase/proofs', {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,
           },
@@ -41,7 +41,7 @@ const AdminVerifyPayments = () => {
     try {
       setActioning(proofId + action);
       await axios.put(
-        `http://localhost:5000/api/purchase/proofs/${proofId}/${action}`,
+        `https://softsell-api.onrender.com/api/purchase/proofs/${proofId}/${action}`,
         {},
         {
           headers: {

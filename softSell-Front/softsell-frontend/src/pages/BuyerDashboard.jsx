@@ -55,7 +55,7 @@ const BuyerDashboard = () => {
 
     const fetchLicenses = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/licenses', {
+        const response = await axios.get('https://softsell-api.onrender.com/api/licenses', {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,
           },

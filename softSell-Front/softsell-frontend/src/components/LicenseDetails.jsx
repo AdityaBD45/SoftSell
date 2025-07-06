@@ -30,7 +30,7 @@ const LicenseDetails = () => {
 
     const fetchLicense = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5000/api/licenses/${id}`, {
+        const { data } = await axios.get(`https://softsell-api.onrender.com/api/licenses/${id}`, {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
         setLicense(data);
@@ -86,7 +86,7 @@ const LicenseDetails = () => {
       const base64 = await toBase64(compressed);
 
       await axios.post(
-        'http://localhost:5000/api/purchase/proof',
+        'https://softsell-api.onrender.com/api/purchase/proof',
         {
           licenseId: id,
           txnId,

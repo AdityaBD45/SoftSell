@@ -77,7 +77,7 @@ const MyPurchases = () => {
       setError('');
       try {
         const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-        const res = await fetch('http://localhost:5000/api/licenses/mypurchases', {
+        const res = await fetch('https://softsell-api.onrender.com/api/licenses/mypurchases', {
           headers: {
             Authorization: `Bearer ${userInfo?.token}`,
           },

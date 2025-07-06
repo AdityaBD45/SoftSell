@@ -74,7 +74,7 @@ const AddListing = ({ onSuccess }) => {
 
       if (!token) throw new Error('User token not found. Please log in again.');
 
-      const response = await fetch('http://localhost:5000/api/licenses', {
+      const response = await fetch('https://softsell-api.onrender.com/api/licenses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

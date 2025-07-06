@@ -16,7 +16,7 @@ const AdminDashboard = () => {
       setError('');
       try {
         const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-        const res = await fetch('http://localhost:5000/api/licenses', {
+        const res = await fetch('https://softsell-api.onrender.com/api/licenses', {
           headers: {
             Authorization: `Bearer ${userInfo?.token}`,
           },
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
 
     try {
       const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-      const res = await fetch(`http://localhost:5000/api/licenses/${licenseId}/approve`, {
+      const res = await fetch(`https://softsell-api.onrender.com/api/licenses/${licenseId}/approve`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
 
     try {
       const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-      const res = await fetch(`http://localhost:5000/api/licenses/${licenseId}/reject`, {
+      const res = await fetch(`https://softsell-api.onrender.com/api/licenses/${licenseId}/reject`, {
         method: 'PATCH',
         headers: {
           Authorization: `Bearer ${userInfo?.token}`,

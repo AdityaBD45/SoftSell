@@ -34,7 +34,7 @@ const EditProfileModal = ({ isOpen, onClose }) => {
       if (password) payload.password = password
       if (userInfo.role === 'seller' && qrBase64) payload.qrBase64 = qrBase64
 
-      const res = await fetch('http://localhost:5000/api/auth/update-profile', {
+      const res = await fetch('https://softsell-api.onrender.com/api/auth/update-profile', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

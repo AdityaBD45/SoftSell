@@ -14,7 +14,7 @@ const AdminMarkAsPaid = () => {
   const fetchLicenses = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get('http://localhost:5000/api/licenses/expired-sold', {
+      const { data } = await axios.get('https://softsell-api.onrender.com/api/licenses/expired-sold', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setLicenses(data);
@@ -33,7 +33,7 @@ const AdminMarkAsPaid = () => {
     try {
       setProcessing(licenseId);
       const { data } = await axios.put(
-        `http://localhost:5000/api/licenses/mark-paid/${licenseId}`,
+        `https://softsell-api.onrender.com/api/licenses/mark-paid/${licenseId}`,
         {},
         {
           headers: { Authorization: `Bearer ${token}` }

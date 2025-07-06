@@ -11,7 +11,7 @@ export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async ({ email, password, expectedRole }, { rejectWithValue }) => {
     try {
-      const { data } = await axios.post('http://localhost:5000/api/auth/login', {
+      const { data } = await axios.post('https://softsell-api.onrender.com/api/auth/login', {
         email,
         password,
       })
@@ -43,7 +43,7 @@ export const registerUser = createAsyncThunk(
   'auth/registerUser',
   async (userData, { rejectWithValue }) => {
     try {
-      const { data } = await axios.post('http://localhost:5000/api/auth/register', userData)
+      const { data } = await axios.post('https://softsell-api.onrender.com/api/auth/register', userData)
 
       localStorage.setItem('userInfo', JSON.stringify(data))
       return data

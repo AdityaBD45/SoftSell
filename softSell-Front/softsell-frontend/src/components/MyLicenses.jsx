@@ -65,7 +65,7 @@ const MyLicenses = () => {
         const userInfo = JSON.parse(localStorage.getItem('userInfo'));
         const token = userInfo?.token;
 
-        const res = await fetch('http://localhost:5000/api/licenses', {
+        const res = await fetch('https://softsell-api.onrender.com/api/licenses', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -91,7 +91,7 @@ const MyLicenses = () => {
     try {
       const userInfo = JSON.parse(localStorage.getItem('userInfo'));
       const token = userInfo?.token;
-      const res = await fetch(`http://localhost:5000/api/licenses/${id}`, {
+      const res = await fetch(`https://softsell-api.onrender.com/api/licenses/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
