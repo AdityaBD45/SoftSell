@@ -17,7 +17,6 @@ const PORT = process.env.PORT || 5000;
 // ✅ Allow frontend domain via CORS
 app.use(cors({
   origin: 'https://softsell-16g8.onrender.com',
-  credentials: true,
 }));
 
 // Middleware
