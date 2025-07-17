@@ -123,6 +123,19 @@ const AdminMarkAsPaid = () => {
                       <span className="text-gray-500">Seller:</span>
                       <span className="font-medium">{license.seller?.name || 'Unknown'}</span>
                     </div>
+
+                    {/* ✅ ADDED: Seller QR code image */}
+                    {license.seller?.qrCodeUrl && (
+                      <div className="mt-3">
+                        <p className="text-sm text-gray-500 mb-1">Seller UPI QR:</p>
+                        <img
+                          src={license.seller.qrCodeUrl}
+                          alt="Seller UPI QR"
+                          className="w-32 h-32 object-contain border border-gray-300 rounded"
+                        />
+                      </div>
+                    )}
+
                     <div className="flex justify-between">
                       <span className="text-gray-500">Buyer:</span>
                       <span className="font-medium">{license.buyer?.name || 'Unknown'}</span>
