@@ -4,10 +4,10 @@ SoftSell is a full-stack MERN (MongoDB, Express, React, Node.js) application tha
 
 ---
 
-## 🚀 Live Site https://softsell-16g8.onrender.com/
+## 🚀 Live Site
 
-🌐 Frontend: [https://softsell-16g8.onrender.com](https://softsell-16g8.onrender.com))  
-🛠️ Backend API: [https://softsell-server.onrender.com](https://softsell-server.onrender.com)  
+🌐 Frontend: [https://softsell-16g8.onrender.com](https://softsell-16g8.onrender.com)  
+🛠️ Backend API: [https://softsell-api.onrender.com](https://softsell-api.onrender.com)  
 
 ---
 
